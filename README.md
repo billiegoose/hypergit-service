@@ -1,5 +1,5 @@
 # hypergit-service
-Runs the hypergit seeder as a background OS service
+Runs hypergit seed as a background service
 
 **Only Windows and Linux supported.**
 This package uses [`os-service`](https://npm.im/os-service) under the hood, so Mac support would need to be added to that package, not this one.
