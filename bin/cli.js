@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 var fs = require('fs')
 var path = require('path')
+var mkdirp = require('mkdirp')
 var console2file = require('console2file').default
 var os_service = require('os-service')
 var sudo = require('sudo-prompt')
@@ -72,7 +73,7 @@ function main ({_: [command]}) {
       break
     case 'seed':
       // I'm using the callback versions because they let us conveniently ignore errors.
-      fs.mkdir(envpaths.log, () => {
+      mkdirp(envpaths.log, () => {
         fs.unlink(path.join(envpaths.log, 'log.txt'), () => {
           console2file({
             filePath: path.join(envpaths.log, 'log.txt'),
