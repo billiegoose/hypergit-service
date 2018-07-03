@@ -1,6 +1,6 @@
 {
   "name": "hypergit-service",
-  "version": "0.0.1",
+  "version": "0.0.0-development",
   "description": "Runs hypergit seed as a background service",
   "bin": "bin/cli.js",
   "keywords": [],
@@ -22,5 +22,12 @@
   },
   "peerDependencies": {
     "hypergit": "^3.2.0"
+  },
+  "scripts": {
+    "test": "node bin/cli.js",
+    "semantic-release": "semantic-release"
+  },
+  "devDependencies": {
+    "semantic-release": "^15.6.3"
   }
 }
