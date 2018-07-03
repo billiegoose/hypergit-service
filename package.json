@@ -25,9 +25,11 @@
   },
   "scripts": {
     "test": "node bin/cli.js",
-    "semantic-release": "semantic-release"
+    "semantic-release": "semantic-release",
+    "travis-deploy-once": "travis-deploy-once"
   },
   "devDependencies": {
-    "semantic-release": "^15.6.3"
+    "semantic-release": "^15.6.3",
+    "travis-deploy-once": "^5.0.1"
   }
 }
